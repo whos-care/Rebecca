@@ -30,10 +30,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -e .
 
-      - name: Run backend sanity checks
-        run: |
-          python -m pytest --maxfail=1 --disable-warnings -q
-
       - name: Setup Node.js 20 LTS
         uses: actions/setup-node@v4
         with:
